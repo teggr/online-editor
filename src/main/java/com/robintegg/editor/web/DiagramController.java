@@ -1,4 +1,4 @@
-package com.robintegg.plantuml.web;
+package com.robintegg.editor.web;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
