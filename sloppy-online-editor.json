@@ -1,0 +1,27 @@
+{
+    "project": "online-editor",
+    "services": [
+        {
+            "id": "frontend",
+            "apps": [
+                {
+                    "id": "application-server",
+                    "domain": {
+                        "uri": "$domain"
+                    },
+                    "mem": 512,
+                    "image": "teggr/online-editor:0.0.1",
+                    "instances": 1,
+                    "port_mappings": [
+                        {
+                            "container_port": 8383
+                        }
+                    ],
+                    "env": {
+                        "MESSAGE": "sloppy.io rulez!"
+                    }
+                }
+            ]
+        }
+    ]
+}
