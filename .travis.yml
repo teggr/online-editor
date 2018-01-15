@@ -1,1 +1,17 @@
+sudo: false
 language: java
+services: docker
+cache:
+  directories:
+  - "$HOME/.cache"
+
+install: true
+script:
+- mvn clean package site -B -V -Dversion.number=$TRAVIS_COMMIT
+
+notifications:
+  email:
+    recipients:
+      - $EMAIL
+    on_success: never
+    on_failure: always

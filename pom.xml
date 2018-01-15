@@ -5,7 +5,6 @@
 
 	<groupId>com.robintegg</groupId>
 	<artifactId>online-editor</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>online-editor</name>
