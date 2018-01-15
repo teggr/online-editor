@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y \
 
 ENV GRAPHVIZ_DOT /usr/bin/dot
 
-COPY target/online-editor-0.0.1-SNAPSHOT.jar /usr/share/online-editor-0.0.1-SNAPSHOT.jar
+COPY target/online-editor.jar /usr/share/online-editor.jar
 
 EXPOSE 8383
 
-CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/usr/share/online-editor-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/usr/share/online-editor.jar"]

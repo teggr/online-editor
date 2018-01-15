@@ -6,8 +6,6 @@ cache:
   - "$HOME/.cache"
 
 install: true
-script:
-- mvn clean package site -B -V -Dversion.number=$TRAVIS_COMMIT
 
 script:
   - docker build -t $DOCKER_IMAGE:$TRAVIS_COMMIT .

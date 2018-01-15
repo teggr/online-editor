@@ -5,7 +5,7 @@
 
 	<groupId>com.robintegg</groupId>
 	<artifactId>online-editor</artifactId>
-	<version>${version.number}</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>online-editor</name>
@@ -19,7 +19,6 @@
 	</parent>
 
 	<properties>
-		<version.number>1.1.0-SNAPSHOT</version.number>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -57,6 +56,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>online-editor</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
